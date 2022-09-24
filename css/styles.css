@@ -169,9 +169,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
     ),
     url("../images/team-for-hero.jpg");
   background-repeat: no-repeat;
@@ -243,7 +243,6 @@ img {
   display: flex;
   gap: 30px;
 }
-
 .work-title,
 .team-title {
   margin-bottom: 50px;
@@ -253,6 +252,25 @@ img {
   line-height: 1.16;
   text-align: center;
 }
+.work-block .item {
+  position: relative;
+}
+.work-block .element {
+  position: absolute;
+  bottom: 0px;
+
+  width: 370px;
+  height: 70px;
+  padding: 27px;
+  text-align: center;  
+  
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.work-block .features-title {
+ margin: 0;
+  color: var(--white-text-color);
+}
+
 .dev-box {
   padding-top: 30px;
   padding-bottom: 30px;
