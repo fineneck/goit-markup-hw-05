@@ -169,9 +169,9 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
     ),
     url("../images/team-for-hero.jpg");
   background-repeat: no-repeat;
@@ -252,22 +252,24 @@ img {
   line-height: 1.16;
   text-align: center;
 }
-.work-block .item {
+.work-thumb {
   position: relative;
 }
 .work-block .element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: absolute;
   bottom: 0px;
 
   width: 370px;
   height: 70px;
-  padding: 27px;
-  text-align: center;  
-  
+
   background-color: rgba(47, 48, 58, 0.8);
 }
 .work-block .features-title {
- margin: 0;
+  margin: 0;
   color: var(--white-text-color);
 }
 
@@ -353,6 +355,8 @@ img {
   gap: 30px;
 }
 .prod-item .link {
+  position: relative;
+  
   display: block;
 
   color: inherit;
@@ -362,6 +366,43 @@ img {
 .prod-item .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.prod-item .prod-thumb {
+  
+}
+.prod-item .descript {
+  display: flex;  
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  position: absolute;
+  top: 0px;
+
+  transform: translateY(0)
+
+  opacity: 0;
+  
+
+ /* width: 370px;*/
+  height: 294px;
+
+  background-color: rgba(33, 150, 243, 0.9);;
+}
+.prod-item .descript-text {
+  text-align: left;
+ 
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--white-text-color);
+}
+.prod-item .link:hover .descript {
+  opacity: 1;
+  
+  transition: 250ms;  
+  transform: translateY(-100%)
+  cubic-bezier(0.4, 0, 0.2, 1)
+  
 }
 .prod-box {
   padding: 20px 24px;
